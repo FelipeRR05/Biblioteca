@@ -52,7 +52,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.php" class="nav-item nav-link active">Acessos</a>
+                <a href="esqueceuSenha.php" class="nav-item nav-link active">Recuperar Senha</a>
+                <a href="cadastro.php" class="nav-item nav-link">Cadastro</a>
+                <a href="login.php" class="nav-item nav-link ">Login</a>
+                <a href="index.php" class="nav-item nav-link ">Acessos</a>
     </nav>
     <!-- Navbar End -->
 
@@ -62,8 +65,7 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Entrar </h1>
-                    <nav aria-label="breadcrumb">
+                    <h1 class="display-3 text-white animated slideInDown">Recuperar Senha</h1>                       
                         </ol>
                     </nav>
                 </div>
@@ -73,34 +75,74 @@
     <!-- Header End -->
 
 
-
-    <!-- Team Start -->
+    <!-- Categories Start -->
+    
+    <!-- Categories Start -->
     <!DOCTYPE html>
-<html lang="pt-br">
+    <html lang="pt-br">
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA -compatible" content="IE=edge">
+        <meta name="Viewport" content="Widh=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style2.css">
+        <title>Formulario de Login</title>
+    
+    
+        <center>
+<?php
+include_once('funcoesJS.php');
+?>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA -compatible" content="IE=edge">
-    <meta name="Viewport" content="Widh=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>Formulario de Cadastro</title>
-
-    <center>
-    <div>
-        <button style="height: 100px; width: 200px; margin: 20px 30px; padding: 20px 40px; font-size: 18px; border-radius: 10px; border: none; cursor: pointer;" type="submit" onClick="window.location.href = 'cadastro.php';">Entrar como Aluno</button>
-    </div>
-    <div>
-        <button style="height: 100px; width: 200px; margin: 20px 30px; padding: 20px 40px; font-size: 18px; border-radius: 10px; border: none; cursor: pointer;" type="submit" onClick="window.location.href = 'loginadm.php';">Entrar como Administrador</button>
-    </div>
-</center>
-                        </div>
-
+        <div class="container">
+            <div class="form image">
+                <img src="assets/img/undraw_shopping_re_svg" alt="">
+            </div>
+        </div class="form image">
+        <form action="#">
+            
+                 </form>
+             </div>
+        </div>
+      <title>Formulario de Registro</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    
+        <div style="padding-bottom: 20px; padding-top: 15;">
+        <form style="background-color: #f7f7f7; box-shadow: 0px 0px 15px #666; width: 55%; border-radius: 15px;" method="post" action="verificarSenha.php" id="formlogin" name="formlogin">
+        <div style="padding: 50px; display: block;">   
+        <h2 style="color: rgba(17, 27, 88, 0.7);">Recuperar Senha</h2>
+            <div style="padding-bottom: 12px;">
+            <label style="float: left; padding-bottom: 5px;" for="nombre">Nome</label><br>
+            <input style="display: block; border: 2px solid #ccc; width: 95%; height: 55px; padding: 10px; margin: 10px; border-radius: 5px;" placeholder="Nome" type="text" id="nome" name="nome" required>
+            </div>
+            <div style="padding-bottom: 0px;">
+            <label style="float: left; padding-bottom: 5px;" for="email">CPF</label><br>
+            <input style="display: block; border: 2px solid #ccc; width: 95%; height: 55px; padding: 10px; margin: 10px; border-radius: 5px;" placeholder="CPF" onkeyup="formatarCPF()" type="text" id="cpf" name="cpf" required>
+        </div>            
+        <div style="width: 100%; display: flex; justify-content: flex-end; align-items: center;">
+            <div style="float: right; display: flex;  justify-content: flex-end; ">
+                <button type="submit">Recuperar Email</button>
+            </div>
+            </div>
+        </form>
+      </div>
+          </center>
+                            </div>
+    
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Team End -->
+
+    <!-- Courses Start -->
+    
+    <!-- Courses End -->
+
+
+    <!-- Testimonial Start -->
+    
+    <!-- Testimonial End -->
         
 
     <!-- Footer Start -->

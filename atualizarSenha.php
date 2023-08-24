@@ -52,7 +52,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.php" class="nav-item nav-link active">Acessos</a>
+                <a href="atualizarSenha.php" class="nav-item nav-link active">Recuperar Senha</a>
+                <a href="cadastro.php" class="nav-item nav-link">Cadastro</a>
+                <a href="login.php" class="nav-item nav-link ">Login</a>
+                <a href="index.php" class="nav-item nav-link ">Acessos</a>
     </nav>
     <!-- Navbar End -->
 
@@ -62,8 +65,7 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Entrar </h1>
-                    <nav aria-label="breadcrumb">
+                    <h1 class="display-3 text-white animated slideInDown">Recuperar Senha</h1>                       
                         </ol>
                     </nav>
                 </div>
@@ -75,32 +77,82 @@
 
 
     <!-- Team Start -->
-    <!DOCTYPE html>
-<html lang="pt-br">
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Meu Perfil</h6>
+                <h1 class="mb-5">Atualizar Senha</h1>
+            </div>
+            <div class="row g-4">
+    <!-- Categories Start -->
+    
+    <!-- Categories Start -->
+    <?php
+session_start();
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA -compatible" content="IE=edge">
-    <meta name="Viewport" content="Widh=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>Formulario de Cadastro</title>
+include_once('funcoesJS.php');
 
-    <center>
-    <div>
-        <button style="height: 100px; width: 200px; margin: 20px 30px; padding: 20px 40px; font-size: 18px; border-radius: 10px; border: none; cursor: pointer;" type="submit" onClick="window.location.href = 'cadastro.php';">Entrar como Aluno</button>
-    </div>
-    <div>
-        <button style="height: 100px; width: 200px; margin: 20px 30px; padding: 20px 40px; font-size: 18px; border-radius: 10px; border: none; cursor: pointer;" type="submit" onClick="window.location.href = 'loginadm.php';">Entrar como Administrador</button>
-    </div>
-</center>
-                        </div>
+// Verificar se o usuário está logado
+if (!isset($_SESSION['nome']) || !isset($_SESSION['cpf']) || !isset($_SESSION['senha'])) {
+    header("Location: esqueceuSenha.php");
+    exit();
+}
 
-                        </div>
+// Obter os valores do usuário da sessão
+$nome = $_SESSION['nome'];
+$cpf = $_SESSION['cpf'];
+$senha = $_SESSION['senha'];
+
+// Exibir o formulário para atualizar o perfil
+echo '
+<div style="display: flex; justify-content: center; align-items: center;">
+    <div class="container" style="padding: 50px; background-color: #f7f7f7; box-shadow: 0px 0px 15px #666; width: 55%; border-radius: 15px;">
+        <form action="recuperarSenha.php" method="POST">
+            <div style=" display: flex; justify-content: center;">
+                <h2 style="color: rgba(17, 27, 88, 0.7);">Atualizar Senha</h2>
+            </div>
+            <div style="padding-bottom: 12px;">
+                <label style="float: left; padding-bottom: 5px;" for="nome">Nome</label><br>
+                <input style="display: block; border: 2px solid #333; background-color: #eee; color: #333; width: 95%; height: 55px; padding: 10px; margin: 10px; border-radius: 5px;" type="text" id="nome" name="nome" value="' . $nome . '" readonly>
+            </div>
+            <div style="padding-bottom: 12px;">
+                <label style="float: left; padding-bottom: 5px;" for="cpf">CPF</label><br>
+                <input style="display: block; border: 2px solid #333; background-color: #eee;; color: #333;width: 95%; height: 55px; padding: 10px; margin: 10px; border-radius: 5px;" type="text" id="cpf" name="cpf" value="' . $cpf . '" readonly>
+            </div>
+            <div style="padding-bottom: 12px;">
+            <label style="float: left; padding-bottom: 5px;" for="senha">Senha</label><br>
+            <div style="position: relative;">
+                <input style="display: block; border: 2px solid #ccc; width: 95%; height: 55px; padding: 10px; margin: 10px; border-radius: 5px;" type="password" id="senha" name="senha" value="' . $senha . '" required>
+                <span style="padding-right: 10px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;" onclick="togglePasswordVisibility()">
+                    <i class="fas fa-eye" id="icone-senha" style="padding-right: 10px;"></i>
+                </span>
+            </div>
+        </div>
+            <div style="padding-bottom: 12px;">
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+                    <label style="position: relative; top: 10px;"></label>
+                    <div style="display: flex; justify-content: flex-end;">
+                        <button type="submit">Atualizar</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
-    <!-- Team End -->
+</div>';
+
+?>
+            </div>
+            </div>
+        </div>
+
+    <!-- Courses Start -->
+    
+    <!-- Courses End -->
+
+
+    <!-- Testimonial Start -->
+    
+    <!-- Testimonial End -->
         
 
     <!-- Footer Start -->

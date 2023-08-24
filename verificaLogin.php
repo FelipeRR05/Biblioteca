@@ -18,10 +18,12 @@
 			} else {
 				// Evita caracteres epsciais (SQL Inject)
 				$nome = $conexao -> real_escape_string($_POST['nome']);
+				$email = $conexao -> real_escape_string($_POST['email']);
 				$senha = $conexao -> real_escape_string($_POST['senha']);
 
 				$sql="SELECT `id`, `nome` FROM `usuario`
 					WHERE `nome` = '".$nome."'
+					AND `email` = '".$email."'
 					AND `senha` = '".$senha."'
 					AND ativo = 's';";
 
@@ -34,12 +36,12 @@
 					$_SESSION['nome'] = $row[1];
 					$conexao -> close();
 					
-					header('Location: catalogo.php', true, 301);
+					header('Location: livros.php', true, 301);
 					exit();
 				} else {
 					
 					$conexao -> close();
-					header('Location: index.php', true, 301);
+					header('Location: login.php', true, 301);
 				}
 			}
 		?>
