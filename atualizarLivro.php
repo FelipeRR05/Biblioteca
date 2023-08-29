@@ -4,7 +4,7 @@
 <head>
     <link rel="icon" href="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Livro-Aberto-PNG.png">
     <meta charset="utf-8">
-    <title>Library Store</title>
+    <title>Magic Book Library</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -72,7 +72,7 @@
                         <div class="row justify-content-start">on
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown"></h5>
-                                <h1 class="display-3 text-white animated slideInDown">LIBRARY STORE</h1>
+                                <h1 class="display-3 text-white animated slideInDown">Magic Book Library</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">SEJA BEM VINDO A LIBRARY! onde a curiosidade é incentivada e o conhecimento é valorizado.
                                     .
                                 </p>
@@ -90,7 +90,7 @@
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown"></h5>
-                                <h1 class="display-3 text-white animated slideInDown">LIBRARY STORE</h1>
+                                <h1 class="display-3 text-white animated slideInDown">Magic Book Library</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">Descubra novas aventuras a cada página na Libery Store - sua biblioteca de leitura.
                                 </p>
                                 <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Tela de Livros</a>
@@ -302,7 +302,7 @@ $conn->close();
         <div class="row g-5">
             <div class="col-lg-6 col-md-6 text-start">
                 <h4 class="text-white mb-3">Obrigado!</h4>
-                <p class="mb-2"><i class=""></i>Agradecemos por nos visitar! Esperamos que você retorne sempre à Library Store para explorar novos livros e continuar desfrutando da nossa vasta seleção. Estamos aqui para acompanhá-lo em sua jornada de leitura.</p>
+                <p class="mb-2"><i class=""></i>Agradecemos por nos visitar! Esperamos que você retorne sempre à Magic Book Library para explorar novos livros e continuar desfrutando da nossa vasta seleção. Estamos aqui para acompanhá-lo em sua jornada de leitura.</p>
                 <p class="mb-2"><i class=""></i>Volte sempre!</p>
             </div>
             <div class="col-lg-3 col-md-6 text-start">

@@ -42,7 +42,7 @@
                 // Usuário já existe, você pode redirecionar para uma página de erro ou exibir uma mensagem
                 echo "Email já cadastrado.";
                 echo '<p>Já possui cadastro? <a href="login.php">ENTRAR</a></p>';
-                echo '<p>Novo na Library Store? <a href="cadastro.php">CADASTRE-SE</a></p>';
+                echo '<p>Novo na Magic Book Library? <a href="cadastro.php">CADASTRE-SE</a></p>';
                 exit();
             }
 

@@ -4,7 +4,7 @@
 <head>
 <link rel="icon" href="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Livro-Aberto-PNG.png">
     <meta charset="utf-8">
-    <title>Library Store</title>
+    <title>Magic Book Library</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -240,7 +240,7 @@ $conn->close();
         <div class="row g-5">
             <div class="col-lg-6 col-md-6 text-start">
                 <h4 class="text-white mb-3">Obrigado!</h4>
-                <p class="mb-2"><i class=""></i>Agradecemos por nos visitar! Esperamos que você retorne sempre à Library Store para explorar novos livros e continuar desfrutando da nossa vasta seleção. Estamos aqui para acompanhá-lo em sua jornada de leitura.</p>
+                <p class="mb-2"><i class=""></i>Agradecemos por nos visitar! Esperamos que você retorne sempre à Magic Book Library para explorar novos livros e continuar desfrutando da nossa vasta seleção. Estamos aqui para acompanhá-lo em sua jornada de leitura.</p>
                 <p class="mb-2"><i class=""></i>Volte sempre!</p>
             </div>
             <div class="col-lg-3 col-md-6 text-start">
