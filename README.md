@@ -1,0 +1,1 @@
+O projeto consiste em uma biblioteca online, na qual os clientes podem pesquisar e reservar livros para aluguel. Os funcionários, por sua vez, podem gerenciar a biblioteca de forma simples, controlando o acervo de livros, os livros alugados, os dados dos clientes e demais atividades.
